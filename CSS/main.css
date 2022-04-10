@@ -134,7 +134,7 @@ a{
     overflow-x: hidden;
     transition: 0.5s;
     /*padding-top: 60px;*/
-    margin-top: 9%;
+    margin-top: 7%;
     
 }
 
@@ -167,11 +167,12 @@ a{
     color: #ff000096;
 }
 .openbutton {
-    font-size: 20px;
+    font-size: 18px;
+    height: 40px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 15px;
+    padding: 1px 15px;
     margin-left: 5px;
     border: none;
     border-radius: 7px;
