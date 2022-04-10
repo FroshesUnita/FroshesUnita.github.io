@@ -1,0 +1,203 @@
+/*===================== GOOGLE FONTS ==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*===================== VARIABLE CSS =============================*/
+:root{
+    /*====Colors====*/
+    --first-color: hsl(231, 11%, 54%);
+    --title-color: hsl(231, 24%,20%);
+    --text-color: hsl(231, 4%, 45%);
+    --body-color: hsl(231, 100%, 99%);
+    --container-color: rgba(255, 255, 255, 0);
+    --pure-color:rgb(255, 255, 255);
+    --scroll-color:rgba(122, 116, 116, 0.307);
+    --scrol-thumb:rgb(4, 4, 4);
+    --blur-color: rgba(255, 255, 255, .3);
+
+
+
+
+
+/*===================== Font and size ================*/
+--body-font: 'Poppins', sans-serif;
+--tiny-font-size: .689rem;
+}    
+
+@media screen and (min-width: 968px) {
+    display: hidden;
+}
+
+/* DARK THEME */
+body.dark-theme{
+    
+}
+
+
+/* DARK AND LIGHT BUTTON */
+.dark-light{
+    display: flex;
+    align-items: center;
+}
+
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--first-color);
+
+}
+
+/*====== BASE =======*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--pure-color);
+    color: var(--pure-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* MAIN NAV&SIDEBAR */
+.main__nav-bar{
+    display: flex;
+}    
+
+
+/* NAV  */
+
+.nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 328px;
+    height: 72px;
+    background-color: var(--blur-color);
+    margin: 0 auto;
+    padding:2rem 4.75rem;
+    border-radius: .65rem;
+
+}
+
+.nav__list{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5rem;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__link i{
+    font-size: 2.50rem;
+    color: var(--title-color);
+    z-index: 20;
+    transition: .3s;
+}
+
+.nav__name{
+    /* font-size: var(--tiny-font-size); */
+    color: var(--first-color);
+    
+
+}
+
+/*============= SIDE BAR ================= */
+.sidemenu {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    /*top: 0;*/
+    left: 0;
+    background-color: var(--pure-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+    margin-top: 10%;
+    
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--first-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidemenu a:hover {
+    color: #000000;
+}
+
+.closebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 35px;
+    width: 38px;
+    font-family: Bahnschrift Condensed;
+    color: #616161;
+    font-size: 28px;
+    margin-left: 50px;
+}
+ 
+.closebutton:hover {
+    color: #ff000096;
+}
+.openbutton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    font-family: ;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbutton:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/*========== SCROLL BAR ==============*/
+
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background: var(--scroll-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--scrol-thumb);
+    border-radius: .5rem;
+}
