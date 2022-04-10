@@ -134,7 +134,7 @@ a{
     overflow-x: hidden;
     transition: 0.5s;
     /*padding-top: 60px;*/
-    margin-top: 10%;
+    margin-top: 9%;
     
 }
 
@@ -172,11 +172,14 @@ a{
     background-color: #111;
     color: white;
     padding: 10px 15px;
+    margin-left: 5px;
     border: none;
+    border-radius: 7px;
 }
   
 .openbutton:hover {
     background-color: #444;
+    box-shadow: 2px 2px 0px #aaaaaa
 }
   
 #main {
@@ -199,4 +202,10 @@ a{
 ::-webkit-scrollbar-thumb{
     background: var(--scrol-thumb);
     border-radius: .5rem;
+}
+
+/*===============Logo==================*/
+.logo {
+    height: 106px;
+    width: 325px;
 }
