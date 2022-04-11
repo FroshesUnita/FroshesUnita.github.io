@@ -13,7 +13,7 @@
     --scroll-color:rgba(122, 116, 116, 0.307);
     --scrol-thumb:rgb(4, 4, 4);
     --blur-color: rgba(255, 255, 255, .3);
-
+    --second-color: hsl(var(--hue-color), 53%, 49%);
 
 
 
@@ -51,6 +51,28 @@ body.dark-theme{
 
 }
 
+.dark-light{
+    position: relative;
+    top: -1rem;
+    right: 5rem;
+    width: 40px;
+    display: flex;
+    padding: .25rem;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), 
+                inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+    color: var(--second-color);
+    cursor: pointer;
+  }
+    
+
+  .dark-theme .dark-light {
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), 
+                inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+  }
+  
+
+
 /*====== BASE =======*/
 *{
     box-sizing: border-box;
@@ -85,15 +107,13 @@ a{
 
 .nav{
     position: fixed;
-    left: 0;
-    right: 0;
-    width: 328px;
-    height: 72px;
+    top: 0;
+    right: -9rem;
     background-color: var(--blur-color);
-    margin: 0 auto;
+    /* margin-right: 50px; */
     padding:2rem 4.75rem;
     border-radius: .65rem;
-
+    z-index: 0;
 }
 
 .nav__list{
@@ -118,8 +138,11 @@ a{
 .nav__name{
     /* font-size: var(--tiny-font-size); */
     color: var(--first-color);
-    
+}
 
+.nav__name:hover{
+    color: #F4511F
+    /*rgba(255, 94, 0, 0.703)*/;
 }
 
 /*============= SIDE BAR ================= */
@@ -149,6 +172,7 @@ a{
 
 .sidemenu a:hover {
     color: #000000;
+    /* color: #F4511F; */
 }
 
 .closebutton {
@@ -167,6 +191,7 @@ a{
     color: #ff000096;
 }
 .openbutton {
+    position: relative;
     font-size: 18px;
     height: 40px;
     cursor: pointer;
@@ -176,6 +201,7 @@ a{
     margin-left: 5px;
     border: none;
     border-radius: 7px;
+    z-index: 1;
 }
   
 .openbutton:hover {
