@@ -87,7 +87,6 @@ html{
 body{
     font-family: var(--body-font);
     background-color: var(--pure-color);
-    color: var(--pure-color);
 }
 
 ul{
