@@ -13,7 +13,9 @@
     --scroll-color:rgba(122, 116, 116, 0.307);
     --scrol-thumb:rgb(4, 4, 4);
     --blur-color: rgba(255, 255, 255, .3);
-    --second-color: hsl(var(--hue-color), 53%, 49%);
+    --hover-color: hsl(231, 24%,20%);
+    --hover-color1: #F4511F;
+    --box-shadow: #aaaaaa;
 
 
 
@@ -29,7 +31,19 @@
 
 /* DARK THEME */
 body.dark-theme{
-    
+    --first-color: hsl(0, 0%, 100%);
+    --title-color: hsl(231, 24%,20%);
+    --text-color: hsl(231, 4%, 45%);
+    --body-color: hsl(231, 100%, 99%);
+    --container-color: rgba(255, 255, 255, 0);
+    --pure-color: #000;
+    --scroll-color: rgb(4, 4, 4);
+    --scrol-thumb:rgba(122, 116, 116, 0.307);
+    --blur-color: rgba(68, 60, 60, 0.137);
+    --dark-color: #3D0000;
+    --hover-color: #950101;
+    --hover-color1: #FF0000;
+    --box-shadow: rgba(68, 60, 60, 0.137);
 }
 
 
@@ -87,6 +101,7 @@ html{
 body{
     font-family: var(--body-font);
     background-color: var(--pure-color);
+    color: var(--pure-color);
 }
 
 ul{
@@ -140,7 +155,7 @@ a{
 }
 
 .nav__name:hover{
-    color: #F4511F
+    color: var(--hover-color1)
     /*rgba(255, 94, 0, 0.703)*/;
 }
 
@@ -170,7 +185,7 @@ a{
 }
 
 .sidemenu a:hover {
-    color: #000000;
+    color: var(--hover-color);
     /* color: #F4511F; */
 }
 
@@ -205,7 +220,8 @@ a{
   
 .openbutton:hover {
     background-color: #444;
-    box-shadow: 2px 2px 0px #aaaaaa;
+    box-shadow: 2px 2px 0px var(--box-shadow);
+    
 }
   
 #main {
