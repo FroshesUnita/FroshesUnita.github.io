@@ -1,5 +1,6 @@
 
 .contact_start{
+   color: var(--title-color);
     margin: 150px;
     margin-top: 100px;
     line-height: 100px;

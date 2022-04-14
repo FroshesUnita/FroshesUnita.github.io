@@ -5,11 +5,11 @@
 :root{
     /*====Colors====*/
     --first-color: hsl(231, 11%, 54%);
-    --title-color: hsl(231, 24%,20%);
+    --title-color: rgb(13, 13, 14);
     --text-color: hsl(231, 4%, 45%);
     --body-color: hsl(231, 100%, 99%);
     --container-color: rgba(255, 255, 255, 0);
-    --pure-color:rgb(255, 255, 255);
+    --pure-white:rgb(255, 255, 255);
     --scroll-color:rgba(122, 116, 116, 0.307);
     --scrol-thumb:rgb(4, 4, 4);
     --blur-color: rgba(255, 255, 255, .3);
@@ -32,11 +32,11 @@
 /* DARK THEME */
 body.dark-theme{
     --first-color: hsl(0, 0%, 100%);
-    --title-color: hsl(231, 24%,20%);
+    --title-color: rgb(93, 98, 122);
     --text-color: hsl(231, 4%, 45%);
     --body-color: hsl(231, 100%, 99%);
     --container-color: rgba(255, 255, 255, 0);
-    --pure-color: #000;
+    --pure-white: #000;
     --scroll-color: rgb(4, 4, 4);
     --scrol-thumb:rgba(122, 116, 116, 0.307);
     --blur-color: rgba(68, 60, 60, 0.137);
@@ -106,8 +106,8 @@ html{
 
 body{
     font-family: var(--body-font);
-    background-color: var(--pure-color);
-    color: var(--pure-color);
+    background-color: var(--pure-white);
+    color: var(--pure-white);
 }
 
 ul{
@@ -173,7 +173,7 @@ a{
     z-index: 1;
     /*top: 0;*/
     left: 0;
-    background-color: var(--pure-color);
+    background-color: var(--pure-white);
     overflow-x: hidden;
     transition: 0.5s;
     /*padding-top: 60px;*/
