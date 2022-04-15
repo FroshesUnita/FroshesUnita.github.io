@@ -1,20 +1,21 @@
 /*===================== GOOGLE FONTS ==========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+
 /*===================== VARIABLE CSS =============================*/
+
+
 :root{
     /*====Colors====*/
-    --first-color: hsl(231, 11%, 54%);
-    --title-color: rgb(13, 13, 14);
-    --text-color: hsl(231, 4%, 45%);
-    --body-color: hsl(231, 100%, 99%);
-    --container-color: rgba(255, 255, 255, 0);
+    --link-color: hsl(231, 11%, 54%);
+    --title-color: #014751;
+    --text-color: hsl(227, 73%, 12%);
+    --body-color: #F8FBFF;
     --pure-white:rgb(255, 255, 255);
     --scroll-color:rgba(122, 116, 116, 0.307);
     --scrol-thumb:rgb(4, 4, 4);
     --blur-color: rgba(255, 255, 255, .3);
-    --hover-color: hsl(231, 24%,20%);
-    --hover-color1: #F4511F;
+    --link-hover: hsl(231, 24%,20%);
     --box-shadow: #aaaaaa;
 
 
@@ -31,18 +32,16 @@
 
 /* DARK THEME */
 body.dark-theme{
-    --first-color: hsl(0, 0%, 100%);
-    --title-color: rgb(93, 98, 122);
-    --text-color: hsl(231, 4%, 45%);
-    --body-color: hsl(231, 100%, 99%);
-    --container-color: rgba(255, 255, 255, 0);
+    --link-color: hsl(0, 0%, 100%);
+    --title-color: #00D37F;
+    --text-color: hsl(0, 0%, 61%);
+    --body-color: #0F2830;
     --pure-white: #000;
     --scroll-color: rgb(4, 4, 4);
     --scrol-thumb:rgba(122, 116, 116, 0.307);
     --blur-color: rgba(68, 60, 60, 0.137);
     --dark-color: #3D0000;
-    --hover-color: #950101;
-    --hover-color1: #FF0000;
+    --link-hover: #950101;
     --box-shadow: rgba(68, 60, 60, 0.137);
 }
 
@@ -67,7 +66,7 @@ body.dark-theme{
 }
 
 .change-theme:hover{
-    color: var(--first-color);
+    color: var(--link-color);
 
 }
 
@@ -106,8 +105,8 @@ html{
 
 body{
     font-family: var(--body-font);
-    background-color: var(--pure-white);
-    color: var(--pure-white);
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 ul{
@@ -118,7 +117,7 @@ a{
     text-decoration: none;
 }
 /* MAIN NAV&SIDEBAR */
-.main__nav-bar{
+.main_nav-bar{
     display: flex;
 }    
 
@@ -157,11 +156,11 @@ a{
 
 .nav__name{
     /* font-size: var(--tiny-font-size); */
-    color: var(--first-color);
+    color: var(--link-color);
 }
 
 .nav__name:hover{
-    color: var(--hover-color1)
+    color: var(--link-hover)
     /*rgba(255, 94, 0, 0.703)*/;
 }
 
@@ -173,7 +172,7 @@ a{
     z-index: 1;
     /*top: 0;*/
     left: 0;
-    background-color: var(--pure-white);
+    background-color: var(--blur-color);
     overflow-x: hidden;
     transition: 0.5s;
     /*padding-top: 60px;*/
@@ -185,13 +184,13 @@ a{
     padding: 8px 8px 8px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: var(--first-color);
+    color: var(--link-color);
     display: block;
     transition: 0.3s;
 }
 
 .sidemenu a:hover {
-    color: var(--hover-color);
+    color: var(--link-hover);
     /* color: #F4511F; */
 }
 
@@ -201,22 +200,25 @@ a{
     right: 10px;
     height: 35px;
     width: 38px;
+    border: 0;
+    /* border-radius: 25px; */
     font-family: Bahnschrift Condensed;
-    color: #616161;
+    background-color: var(--blur-color);
+    color: var(--link-color);
     font-size: 28px;
     margin-left: 50px;
 }
  
 .closebutton:hover {
-    color: #ff000096;
+    color: var(--link-hover);
 }
 .openbutton {
     position: relative;
     font-size: 18px;
     height: 40px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
+    background-color: var(--body-color);
+    color: var(--title-color);
     padding: 1px 15px;
     margin-left: 15px;
     border: none;
@@ -225,8 +227,8 @@ a{
 }
   
 .openbutton:hover {
-    background-color: #444;
-    box-shadow: 2px 2px 0px var(--box-shadow);
+    background-color: var(--blur-color);
+    box-shadow: 2px 2px 15px var(--box-shadow);
     
 }
   
@@ -240,7 +242,9 @@ a{
     .sidebar a {font-size: 18px;}
 }
 
+
 /*========== SCROLL BAR ==============*/
+
 
 ::-webkit-scrollbar{
     width: 0.6rem;
