@@ -175,7 +175,7 @@ a{
     left: 0;
     background-color: var(--pure-white);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.45s;
     /*padding-top: 60px;*/
     margin-top: 7%;
     
@@ -222,6 +222,7 @@ a{
     border: none;
     border-radius: 7px;
     z-index: 1;
+    transform: translateX(0);
 }
   
 .openbutton:hover {
