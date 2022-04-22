@@ -19,8 +19,7 @@
     --box-shadow: #5c2259;
     --container-color: #b2f7ef28;
     --container-color1: #b2f7ef28;
-
-
+    --blur-color_streams: #767b7ad3;
 
 
 /*===================== Font and size ================*/
@@ -122,10 +121,20 @@ a{
     text-decoration: none;
 }
 /* MAIN NAV&SIDEBAR */
-.main_nav-bar{
+.main__nav-bar{
     display: flex;
+    background-color: var(--blur-color);
+    width: fit-content ;
+
 }    
 
+header{
+    background-color: var(--blur-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15%;
+}
 
 /* NAV  */
 
@@ -133,7 +142,7 @@ a{
     position: fixed;
     top: 0;
     right: -9rem;
-    background-color: var(--blur-color);
+    /* background-color: var(--blur-color1); */
     /* margin-right: 50px; */
     padding:2rem 4.75rem;
     border-radius: .65rem;
@@ -177,7 +186,7 @@ a{
     z-index: 1;
     /*top: 0;*/
     left: 0;
-    background-color: var(--blur-color);
+    background-color: var(--blur-color_streams);
     overflow-x: hidden;
     transition: 0.45s;
     /*padding-top: 60px;*/
@@ -188,7 +197,7 @@ a{
 .sidemenu a {
     padding: 8px 8px 8px 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--link-color);
     display: block;
     transition: 0.3s;
@@ -264,6 +273,6 @@ a{
 
 /*===============Logo==================*/
 .logo {
-    height: 106px;
-    width: 325px;
+    height: 25%;
+    width: 225px;
 }

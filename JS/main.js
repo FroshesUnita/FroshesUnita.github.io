@@ -31,13 +31,13 @@ themeButton.addEventListener('click', () => {
 //========================SIDE BAR======================
 
 function openMenu() {
-  document.getElementById("SideMenu").style.width = "325px";
-  document.getElementById("Main").style.marginLeft = "325px";
-  document.getElementById("openbutton").style.display = "none";
+  document.getElementById("SideMenu").style.width = "100%";
+  // document.getElementById("Main").style.marginLeft = "325px";
+  // document.getElementById("openbutton").style.display = "none";
 }
 
 function closeMenu() {
   document.getElementById("SideMenu").style.width = "0";
   document.getElementById("Main").style.marginLeft= "0";
-  document.getElementById("openbutton").style.display = "block";
+  // document.getElementById("openbutton").style.display = "block";
 }
